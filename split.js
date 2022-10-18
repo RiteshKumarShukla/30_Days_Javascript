@@ -1,10 +1,16 @@
-// split(): The split method splits a string at a specified place.
-let string = '30 Days Of JavaScript'
-console.log(string.split())     // ["30 Days Of JavaScript"]
-console.log(string.split(' '))  // ["30", "Days", "Of", "JavaScript"]
-let firstName = 'Asabeneh'
-console.log(firstName.split())  // ["Asabeneh"]
-console.log(firstName.split(''))  // ["A", "s", "a", "b", "e", "n", "e", "h"]
-let countries = 'Finland, Sweden, Norway, Denmark, and Iceland'
-console.log(countries.split(',')) // ["Finland", " Sweden", " Norway", " Denmark", " and Iceland"]
-console.log(countries.split(', '))   //  ["Finland", "Sweden", "Norway", "Denmark", "and Iceland"]
+let js = 'JavaScript'
+const charsInJavaScript = js.split('')
+
+console.log(charsInJavaScript) // ["J", "a", "v", "a", "S", "c", "r", "i", "p", "t"]
+
+let companiesString = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
+const companies = companiesString.split(',')
+
+console.log(companies) // ["Facebook", " Google", " Microsoft", " Apple", " IBM", " Oracle", " Amazon"]
+let txt =
+  'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+const words = txt.split(' ')
+
+console.log(words)
+// the text has special characters think how you can just get only the words
+// ["I", "love", "teaching", "and", "empowering", "people.", "I", "teach", "HTML,", "CSS,", "JS,", "React,", "Python"]
